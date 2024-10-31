@@ -110,10 +110,46 @@ export default function HeaderNav() {
                         <li>
                           <button
                             onClick={() => {
+                              SetLanguage("fr");
+                            }}
+                          >
+                            Français
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            onClick={() => {
+                              SetLanguage("gr");
+                            }}
+                          >
+                            Deutsch
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            onClick={() => {
+                              SetLanguage("ru");
+                            }}
+                          >
+                            русский
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            onClick={() => {
                               SetLanguage("jp");
                             }}
                           >
                             日本語
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            onClick={() => {
+                              SetLanguage("ch");
+                            }}
+                          >
+                            中国人
                           </button>
                         </li>
                       </ul>

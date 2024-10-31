@@ -15,10 +15,7 @@ export default function HeaderDiscountAlert() {
         <div className="header-alert-content">
           <p>
             <FontAwesomeIcon icon={faHourglassHalf} />{" "}
-            <Translator>
-              24-HOURS ONLY | Save up to 10% + extra 5% off your first order.
-              Code: DESCOVEREGY
-            </Translator>
+            <Translator>header_discount_alert_desc</Translator>
           </p>
           <div>
             <Link to="/BuyNow">

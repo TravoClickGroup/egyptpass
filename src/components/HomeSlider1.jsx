@@ -1,7 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpFromBracket,
@@ -15,10 +13,11 @@ import {
   faTimesCircle,
   faUmbrellaBeach,
 } from "@fortawesome/free-solid-svg-icons";
-import Translator from "./Translator";
+import Translator, { isRtl } from "./Translator";
 
 export default function HomeSlider1() {
   var settings = {
+    rtl: isRtl(),
     // slidesToShow: 5,
     // slidesToScroll: 1,
     autoplay: true,

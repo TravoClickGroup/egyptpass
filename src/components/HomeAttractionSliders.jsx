@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Translator from "./Translator";
+import Translator, { isRtl } from "./Translator";
 import Slider from "react-slick";
 
 import img1 from "../images/img1.png";
@@ -62,6 +62,7 @@ export default function HomeAttractionSliders() {
 
 function HomeAttarctionSlider1({ data }) {
   var settings = {
+    rtl: isRtl(),
     // slidesToShow: 5,
     // slidesToScroll: 1,
     dots: true, // Enables dots navigation

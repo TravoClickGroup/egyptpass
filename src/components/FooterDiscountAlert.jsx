@@ -11,10 +11,7 @@ export default function FooterDiscountAlert() {
               <Translator>Have a 10% discount, on us!</Translator>
             </h1>
             <p>
-              <Translator>
-                Sign up to our newsletter and receive exclusive discounts, trip
-                inspiration and attraction updates straight to your inbox.
-              </Translator>
+              <Translator>footer_discount_alert_desc</Translator>
             </p>
           </div>
           <div>
@@ -32,10 +29,7 @@ export default function FooterDiscountAlert() {
               <label style={{ padding: 5, display: "flex" }}>
                 <input type="checkbox" className="checkbox" />
                 <span>
-                  <Translator>
-                    By signing up, you agree to receiving email updates in
-                    accordance with The London Pass's{" "}
-                  </Translator>
+                  <Translator>Subscribe_accept_check</Translator>{" "}
                   <a href="/" style={{ textDecoration: "underline" }}>
                     <Translator>privacy policy</Translator>
                   </a>

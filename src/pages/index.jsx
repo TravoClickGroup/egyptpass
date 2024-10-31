@@ -17,6 +17,8 @@ import HomeSlider1 from "../components/HomeSlider1";
 import HomeAttractionSliders from "../components/HomeAttractionSliders";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import HomeReviewsSlider1 from "../components/HomeReviewsSlider";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function index({ data }) {
   const cover_bg = getImage(data.coverImage);
@@ -172,8 +174,10 @@ export default function index({ data }) {
                 </b>
               </h3>
               <p>
-                Pick a 1, 2, 3, 4, 5, 6, 7 or 10-day credits package, whichever
-                works for your trip.
+                <Translator>
+                  Pick a 1, 2, 3, 4, 5, 6, 7 or 10-day credits package,
+                  whichever works for your trip.
+                </Translator>
               </p>
             </div>
             <div>
@@ -188,7 +192,9 @@ export default function index({ data }) {
                 </b>
               </h3>
               <p>
-                Download our highly-rated app to scan in at each attraction.
+                <Translator>
+                  Download our highly-rated app to scan in at each attraction.
+                </Translator>
               </p>
             </div>
             <div>
@@ -203,7 +209,10 @@ export default function index({ data }) {
                 </b>
               </h3>
               <p>
-                Enjoy guaranteed savings (or we'll refund you the difference!).
+                <Translator>
+                  Enjoy guaranteed savings (or we'll refund you the
+                  difference!).
+                </Translator>
               </p>
             </div>
           </div>

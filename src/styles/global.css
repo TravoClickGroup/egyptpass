@@ -171,6 +171,10 @@ h3 {
   border-radius: 10px;
   margin-inline-end: 20px;
   flex: 1;
+  color: var(--black);
+}
+.subscribe-input:focus {
+  outline: none;
 }
 .subscribe-btn {
   background-color: var(--dark-blue-1);
@@ -540,4 +544,7 @@ input[type="checkbox"].checkbox:checked:after {
   overflow: hidden; /* Hides any overflowed text */
   text-overflow: ellipsis; /* Adds the ellipsis (...) */
   width: 100%;
+}
+.slick-slide {
+  margin: 0 10px; /* Adjust margins */
 }

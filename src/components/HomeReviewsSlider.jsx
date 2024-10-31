@@ -3,9 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RatingStars from "./RatingStars";
+import { isRtl } from "./Translator";
 
 export default function HomeReviewsSlider1() {
   var settings = {
+    rtl: isRtl(),
     autoplay: false,
     infinite: true,
     dots: true,
