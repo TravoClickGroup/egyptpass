@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkegypt_pass=self.webpackChunkegypt_pass||[]).push([[452],{8937:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var u=t(6540),s=t(9644);function r(){return u.createElement(s.A,null,"Buy now")}}}]);
+//# sourceMappingURL=component---src-pages-buy-now-jsx-8b28f62cc207776fbc53.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkegypt_pass=self.webpackChunkegypt_pass||[]).push([[763],{7362:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var u=t(6540),s=t(9644);function r(){return u.createElement(s.A,null)}}}]);
+//# sourceMappingURL=component---src-pages-fa-qs-jsx-bc3349304a0b6fa1123a.js.map

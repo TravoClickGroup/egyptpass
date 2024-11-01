@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkegypt_pass=self.webpackChunkegypt_pass||[]).push([[415],{3729:function(e,t,n){n.r(t),n.d(t,{Head:function(){return s}});var l=n(6540),u=n(4810),a=n(9644);t.default=()=>l.createElement(a.A,null,l.createElement(u.N_,{to:"/"},"Go home"),".");const s=()=>l.createElement("title",null,"Not found")}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-65f6886315c8a788d725.js.map
