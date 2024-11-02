@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 :root {
-  --main-color: #ee5aac;
+  --main-color: #3f3f3f;
   --red1: rgb(67, 30, 232);
   --white: #fff;
   --black: #000;
@@ -692,4 +692,48 @@ header.fixed {
 .HomeInspiringCulturesItem h3 {
   color: white;
   font-weight: bold;
+}
+
+.faq-input {
+  margin-top: 20px;
+}
+.faq-input input,
+.faq-input textarea,
+.faq-input select {
+  width: 100%;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 7px;
+  outline: none;
+  border: solid 3px #cacaca;
+}
+
+.faq-input input:focus,
+.faq-input select:focus,
+.faq-input textarea:focus {
+  border: solid 3px #747373;
+}
+
+.faq-btn {
+  width: 100%;
+  text-align: center;
+  background-color: var(--light-blue-1);
+  color: var(--white);
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: solid 1px var(--light-blue-1);
+  transition: 0.2s;
+}
+
+.faq-btn:hover {
+  background-color: transparent;
+  color: var(--light-blue-1);
+}
+
+.faq-btn:active {
+  transform: translateY(2px);
+  box-shadow: gray 0px 0px 5px 0px;
 }
