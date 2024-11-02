@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/egyptpass",
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
   },

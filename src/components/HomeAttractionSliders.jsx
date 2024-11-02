@@ -12,6 +12,7 @@ import img8 from "../images/img8.png";
 import img9 from "../images/img9.png";
 import img10 from "../images/img10.png";
 import img11 from "../images/dahshur_Thumb.jpg";
+import { Link } from "gatsby";
 
 export default function HomeAttractionSliders() {
   const [selectedTab, setselectedTab] = useState(1);
@@ -88,14 +89,16 @@ function HomeAttarctionSlider1({ data }) {
 }
 
 const HomeAttarctionSlider1Item = ({ data }) => (
-  <div className="HomeAttarctionSlider1Item">
-    <img src={data.img} alt="" />
-    <p className="title">{data?.title}</p>
-    <p>
-      <b>{data?.price?.toFixed(2)} $</b> {data.person && "/"} {data?.person}
-    </p>
-    <p className="note">{data.note}</p>
-  </div>
+  <Link to="/">
+    <div className="HomeAttarctionSlider1Item">
+      <img src={data.img} alt="" />
+      <p className="title">{data?.title}</p>
+      <p>
+        <b>{data?.price?.toFixed(2)} $</b> {data.person && "/"} {data?.person}
+      </p>
+      <p className="note">{data.note}</p>
+    </div>
+  </Link>
 );
 
 const data1 = [

@@ -19,6 +19,8 @@ import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import HomeReviewsSlider1 from "../components/HomeReviewsSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import HomeTopCultures from "../components/HomeTopCultures";
+import HomeInspiringCultures from "../components/HomeInspiringCultures";
 
 export default function index({ data }) {
   const cover_bg = getImage(data.coverImage);
@@ -223,6 +225,13 @@ export default function index({ data }) {
             <Translator>Find out more</Translator>
           </button>
         </div>
+      </div>
+
+      <div className="centered-container">
+        <HomeTopCultures />
+      </div>
+      <div className="centered-container">
+        <HomeInspiringCultures />
       </div>
 
       <div className="centered-container buy-with-conf">

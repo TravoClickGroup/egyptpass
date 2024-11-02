@@ -76,4 +76,5 @@ export const en = {
   "Enjoy guaranteed savings (or we'll refund you the difference!).":
     "Enjoy guaranteed savings (or we'll refund you the difference!).",
   "We make sightseeing easy": "We make sightseeing easy",
+  findPlacesAndThingsToDo: "Find places and things to do",
 };

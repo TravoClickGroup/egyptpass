@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Translator, { SetLanguage } from "./Translator";
+import React, { useEffect, useState } from "react";
+import Translator from "./Translator";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,9 +8,27 @@ import {
   faEarth,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
+import NavLanguageMenu from "./NavLanguageMenu";
 
 export default function HeaderNav() {
   const [showLanguagesList, setShowLanguagesList] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 63) {
+        // Adjust 50 to the scroll distance you want
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -22,7 +40,8 @@ export default function HeaderNav() {
           }}
         ></div>
       )}
-      <header>
+      {isFixed && <div style={{ height: 63 }}></div>}
+      <header className={isFixed ? "fixed" : ""}>
         <nav className="head-main-nav">
           <div className="head-logo">
             <Link to="/">
@@ -86,75 +105,7 @@ export default function HeaderNav() {
                     </button>
                   </div>
 
-                  {showLanguagesList && (
-                    <div className="langs-selector">
-                      <ul>
-                        <li>
-                          <button
-                            onClick={() => {
-                              SetLanguage("en");
-                            }}
-                          >
-                            English
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            onClick={() => {
-                              SetLanguage("ar");
-                            }}
-                          >
-                            العربية
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            onClick={() => {
-                              SetLanguage("fr");
-                            }}
-                          >
-                            Français
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            onClick={() => {
-                              SetLanguage("gr");
-                            }}
-                          >
-                            Deutsch
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            onClick={() => {
-                              SetLanguage("ru");
-                            }}
-                          >
-                            русский
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            onClick={() => {
-                              SetLanguage("jp");
-                            }}
-                          >
-                            日本語
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            onClick={() => {
-                              SetLanguage("ch");
-                            }}
-                          >
-                            中国人
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                  )}
+                  {showLanguagesList && <NavLanguageMenu />}
                 </div>
               </li>
               <li className="separator"></li>
