@@ -110,10 +110,18 @@ export default function FAQs() {
             </div>
             <div className="faq-input">
               <select>
-                <option>How to use</option>
-                <option>Refund</option>
-                <option>Reservations</option>
-                <option>Can't find my pass</option>
+                <option>
+                  <Translator>How to use</Translator>
+                </option>
+                <option>
+                  <Translator>Refund</Translator>
+                </option>
+                <option>
+                  <Translator>Reservations</Translator>
+                </option>
+                <option>
+                  <Translator>Can't find my pass</Translator>
+                </option>
               </select>
             </div>
             <div className="faq-input">
@@ -140,7 +148,9 @@ export default function FAQs() {
             </div>
 
             <p style={{ marginTop: 10 }}>
-              Feel free to give us a toll-free call on the following numbers.
+              <Translator>
+                Feel free to give us a toll-free call on the following numbers.
+              </Translator>
             </p>
 
             <div
