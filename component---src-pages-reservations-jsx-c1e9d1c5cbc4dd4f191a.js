@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkegypt_pass=self.webpackChunkegypt_pass||[]).push([[648],{4424:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var u=t(6540),s=t(9644);function r(){return u.createElement(s.A,null)}}}]);
-//# sourceMappingURL=component---src-pages-reservations-jsx-c1e9d1c5cbc4dd4f191a.js.map
