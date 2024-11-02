@@ -165,7 +165,9 @@ export default function FAQs() {
                   <h4>
                     <b>{x.title}</b>
                   </h4>
-                  <p style={{ textDecoration: "underline" }}>{x.no}</p>
+                  <p style={{ textDecoration: "underline" }}>
+                    <a href={"tel:" + x.no}>{x.no}</a>
+                  </p>
                 </div>
               ))}
             </div>
