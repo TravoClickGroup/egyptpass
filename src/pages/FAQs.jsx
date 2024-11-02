@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Translator from "../components/Translator";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeSquare, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Seo from "../components/Seo";
 
 export default function FAQs() {
   const [selectedQuestionIndex, setSelectedQuestionIndex] = useState(null);
@@ -177,6 +178,8 @@ export default function FAQs() {
     </Layout>
   );
 }
+
+export const Head = () => <Seo title={"FAQ"}></Seo>;
 
 const data = [
   {
